@@ -1,12 +1,12 @@
 # SALVI: Speech Analysis of Language Varieties in Italy
 
-This repository contains the information and the code for SALVI project, aiming at the analysis of the Italian language varieties from a speech perspective. 
+This repository contains the information and the code for the SALVI project, aiming at analyzing Italian language varieties from a speech perspective. You can freely access the full paper [here](https://aclanthology.org/2024.lrec-main.1317/).
 
-**The code and all details will be released upon publication of the related paper.**
+**Code and additional details for data downloading and splitting will be available soon**.
 
 ## Data
 
-The main dataset currently used for the project is the [VIVALDI](https://www2.hu-berlin.de/vivaldi/) and its development is out of the scope of this project.
+The main dataset currently used for the project is the [VIVALDI](https://www2.hu-berlin.de/vivaldi/) and its development is out of the scope for this project.
 
 | Region name (EN)      |    Region name (IT)   | \# cities | Included | Acronym |
 |-----------------------|:---------------------:|:---------:|:--------:|:-------:|
@@ -45,3 +45,29 @@ The pre-trained models evaluated in the project are the following:
 - [XLSR-128](https://huggingface.co/facebook/wav2vec2-xls-r-300m): a pre-trained model, closely following the Wav2Vec2 architecture, trained on 128 languages, including Italian.
 - [ECAPA](https://huggingface.co/speechbrain/lang-id-voxlingua107-ecapa): a model pre-trained for the language identification on VoxLingua107 dataset (including Italian).
 
+## Referencing
+
+Below is the citation for our paper presented at LREC-COLING 2024.
+
+```bibtex
+@inproceedings{la-quatra-etal-2024-speech-analysis,
+    title = "Speech Analysis of Language Varieties in {I}taly",
+    author = "La Quatra, Moreno  and
+      Koudounas, Alkis  and
+      Baralis, Elena  and
+      Siniscalchi, Sabato Marco",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italy",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.1317",
+    pages = "15147--15159",
+}
+```
